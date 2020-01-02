@@ -57,6 +57,7 @@ li {
   font-weight: 800;
   text-transform: uppercase;
   padding: 50px 0;
+  cursor: pointer;
 }
 .header__menu a:hover {
   color: #1abb9c;
@@ -119,6 +120,7 @@ li {
 }
 button.slick-prew.slick-arrow {
   position: absolute;
+  cursor: pointer;
   width: 45px;
   height: 45px;
   background-color: #fdfdfd;
@@ -254,8 +256,6 @@ button.slick-prew.slick-arrow {
   width: 193px;
   height: 1px;
   top: 50px;
-}
-.item__line::after {
   margin-left: 65px;
 }
 
@@ -273,19 +273,19 @@ button.slick-prew.slick-arrow {
   }
   .projects__inner-content {
     padding: 25px 20px;
-    .projects__inner-title{
+    .projects__inner-title {
       font-size: 15px;
       line-height: 26px;
       font-weight: 800;
       text-transform: uppercase;
       margin-bottom: 10px;
     }
-    .projects__inner-type{
+    .projects__inner-type {
       font-size: 12px;
       line-height: 26px;
       color: #1abb9c;
     }
-    .projects__inner-text{
+    .projects__inner-text {
       font-size: 14px;
       color: #7a7a7a;
       line-height: 25px;
@@ -299,3 +299,177 @@ button.slick-prew.slick-arrow {
   margin-right: 50px;
 }
 //end projects
+//start customers
+.customers {
+  padding: 80px 0;
+  min-height: 330px;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.customers__title {
+  color: #d0d0d0;
+}
+.customers__title::after,
+.customers__title::before {
+  background-color: #777777;
+}
+.customers__title::after {
+  margin-left: 80px;
+}
+.customers__title::before {
+  margin-right: 80px;
+}
+.customers__inner {
+  text-align: center;
+}
+.customers__review {
+  padding: 10px 115px 20px;
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 300;
+  color: #d8d8d8;
+}
+.customers__name {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #1abb9c;
+  padding-bottom: 20px;
+}
+.slick-dots {
+  li {
+    height: 20px;
+    width: 20px;
+    padding-right: 4px;
+    background-image: url(../images/icons/dots.svg);
+    color: #777777;
+    cursor: pointer;
+    button {
+      display: none;
+    }
+  }
+}
+//end customers
+//start journal
+.journal {
+  padding: 80px 0;
+}
+.journal__title::after {
+  margin-left: 50px;
+}
+.journal__title::before {
+  margin-right: 50px;
+}
+.journal__inner {
+  display: flex;
+  justify-content: space-between;
+  .date {
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    color: #7a7a7a;
+    line-height: 14px;
+    padding: 10px;
+    .day {
+      font-size: 20px;
+      padding-bottom: 5px;
+    }
+    .month {
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+  .journal__item-title {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .journal__item-com {
+    font-size: 12px;
+    line-height: 20px;
+    color: #1abb9c;
+  }
+}
+.journal__content {
+  margin: 25px 50px 25px 20px;
+  display: inline-block;
+}
+.journal__item-text {
+  color: #7a7a7a;
+  line-height: 25px;
+}
+//end journal
+//start footer
+footer {
+  color: #cacaca;
+  a {
+    color: #cacaca;
+  }
+}
+.footer__inner {
+  background-color: #373737;
+}
+.footer__items {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.footer__col {
+  max-width: 250px;
+  width: 100%;
+
+  &-posts {
+    max-width: 220px;
+  }
+  &-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+  &-text {
+    line-height: 24px;
+    padding-bottom: 35px;
+  }
+}
+.footer__info {
+  padding-left: 25px;
+  line-height: 24px;
+  position: relative;
+  &::before{
+    content: url(../images/icons/adress.svg);
+    color: #cacaca;
+    width: 9px;
+    height: 13px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+  }
+}
+.footer__info-phone{
+  &::before{
+    content: url(../images/icons/phone.svg);
+    top: 1px;
+  }
+}
+.footer__info-email{
+  &::before{
+    content: url(../images/icons/message.svg);
+    top: 1px;
+  }
+}
+.footer__posts-link {
+  line-height: 22px;
+}
+.footer__posts-date {
+  margin-bottom: 30px;
+}
+.footer__copy {
+  background-color: #333333;
+  padding: 40px 0;
+}
+
+//end footer
