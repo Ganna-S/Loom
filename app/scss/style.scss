@@ -1,37 +1,4 @@
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-body {
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  background-color: #fefefe;
-  color: #606060;
-}
-a {
-  color: #606060;
-  display: inline-block;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-}
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
+@import 'global';
 
 //start header
 
@@ -70,6 +37,7 @@ li {
   overflow: hidden;
 }
 .slider__box {
+  width: 100%;
   position: relative;
 }
 .slider__inner-box {
@@ -127,7 +95,7 @@ button.slick-prew.slick-arrow {
   border: 1px solid #fdfdfd;
   top: 252px;
   left: 20px;
-  z-index: 2;
+  z-index: 1;
 }
 //end slider
 //start works
@@ -473,3 +441,6 @@ footer {
 }
 
 //end footer
+
+
+@import 'media';

@@ -13,5 +13,7 @@ $(function () {
         infinite: false,
         arrows: false,
     });
-
+    $('.menu__btn').on('click', function () {
+        $('.menu__list').slideToggle();
+    });
 });
