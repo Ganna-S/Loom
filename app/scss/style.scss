@@ -63,7 +63,7 @@
 
   .slider__descr {
     color: #606060;
-    padding-top: 400px;
+    padding-top: 350px;
     padding-left: 50px;
     padding-bottom: 50px;
     .slider__descr-title {
@@ -343,12 +343,13 @@ button.slick-prew.slick-arrow {
   justify-content: space-between;
   .date {
     width: 45px;
+    height: 45px;
     display: inline-block;
     text-align: center;
     border: 1px solid #e1e1e1;
     color: #7a7a7a;
     line-height: 14px;
-    padding: 10px;
+    padding: 5px;
     .day {
       font-size: 20px;
       padding-bottom: 5px;
@@ -357,6 +358,9 @@ button.slick-prew.slick-arrow {
       text-transform: uppercase;
       font-size: 12px;
     }
+  }
+  .journal__content{
+    min-width: 240px;
   }
   .journal__item-title {
     font-weight: 800;
@@ -376,6 +380,7 @@ button.slick-prew.slick-arrow {
 .journal__item-text {
   color: #7a7a7a;
   line-height: 25px;
+  max-width: 370px;
 }
 //end journal
 //start footer
